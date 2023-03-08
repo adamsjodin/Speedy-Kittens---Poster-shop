@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100vw;
+    background-color: black;
 }
 
 .header {
@@ -27,10 +28,18 @@ body {
     font-size: 110px;
     font-family: roboto;
 }
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .nav-icon {
-    align-self: flex-start;
-    margin: 1rem 0 0 1rem;
+    margin: 1rem;
+}
+
+.shoppingcart-icon {
+    margin: 1.2rem;
 }
 
 .little-imgs {
@@ -74,6 +83,7 @@ body {
     text-align: start;
     gap: 1rem;   
     font-family: 'fira sans';
+    
 }
 
 .product-card-big h2 {
@@ -83,6 +93,7 @@ body {
 .big-imgs {
     width: 483px;
     background-color: white;
+    margin-bottom: 2rem;
 }
 
 .big-imgs img {
@@ -112,13 +123,68 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 320px;
-    
 }
 
 nav {
-    margin: 1 ;
+    margin: 1;
 }
 
 li {
     list-style: none;
+}
+
+
+/* CHECKOUT PAGE  */
+
+
+.checkout {
+    background-color: black;
+    margin: auto;
+    width: 999px;
+}
+
+.checkout h2 {
+    color: white;
+    font-family: 'roboto';
+    font-size: 48px;
+}
+
+.checkout-info {
+    color: white;
+    font-family: roboto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.checkout-info-total {
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    width: 999px;
+    margin: auto;
+    font-family: roboto;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.checkout-button button {
+    width: fit-content;
+    background-color: var(--button-red);
+    color: white;
+    border-radius: 3px;
+    padding: 0.8rem 1.3rem;
+    border: none;
+    font-family: 'fira sans';
+    font-size: 1rem;
+    margin: 4rem 0;
+}
+
+.nav-icon-checkout {
+    align-self: flex-start;
+    margin: 1rem
 }
